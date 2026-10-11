@@ -1,0 +1,70 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="csrf-token" content="{{ csrf_token }}" />
+  <meta name="theme-color" content="#181c22" />
+  <link rel="icon" type="image/png" href="{% static 'assistant/icons/favicon.png' %}" />
+  <link rel="manifest" href="{% url 'manifest' %}" />
+  <link rel="apple-touch-icon" href="{% static 'assistant/icons/icon-192.png' %}" />
+  <title>AI Assistant</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="{% static 'assistant/style.css' %}" />
+</head>
+<body data-chat-url="{% url 'chat_api' %}" data-sw-url="{% url 'sw' %}">
+  <div class="app">
+    <header class="app-header">
+      <div class="brand">
+        <img class="brand-logo" src="{% static 'assistant/icons/logo.png' %}" alt="" width="32" height="32" />
+        <span class="brand-name">AI ASSISTANT</span>
+      </div>
+      <span class="status" id="status">Online</span>
+    </header>
+
+    <div class="offline-banner" id="offline-banner" role="status" hidden>
+      You're offline. Reconnect to the internet to ask the assistant.
+    </div>
+
+    <main class="log" id="log" aria-live="polite">
+      <div class="msg assistant">
+        <div class="meta">CLASS ASSISTANT · LESSON HELPER</div>
+        <div class="bubble">
+          Hi! Ready to explore today's lesson? Ask me anything about your
+          topic and I'll explain it in simple words.
+        </div>
+      </div>
+    </main>
+
+    <div class="chips" id="chips">
+      <button type="button" class="chip">Explain it simply</button>
+      <button type="button" class="chip">Give me an example</button>
+      <button type="button" class="chip">Quiz me</button>
+      <button type="button" class="chip">try me</button>
+    </div>
+
+    <form class="composer" id="composer" autocomplete="off">
+      <input
+        type="text"
+        id="message"
+        class="form-control"
+        placeholder="Ask a question for class..."
+        maxlength="1000"
+        aria-label="Your question"
+        required
+      />
+      <div class="composer-actions">
+        <button type="button" class="btn btn-outline-dark" id="clear">Clear</button>
+        <button type="submit" class="btn btn-dark" id="send">Send</button>
+      </div>
+    </form>
+
+    <footer class="app-footer">Safe Student Mode · Offline PWA</footer>
+  </div>
+
+  <script src="{% static 'assistant/chat.js' %}"></script>
+</body>
+</html>
