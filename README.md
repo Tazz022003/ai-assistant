@@ -24,7 +24,7 @@ A web-based AI Assistant built with Django and Python. This project provides a f
 
 
 
-\## 🛠️ Tech Stack
+\##  Tech Stack
 
 
 
@@ -42,7 +42,7 @@ A web-based AI Assistant built with Django and Python. This project provides a f
 
 
 
-\## 📁 Project Structure
+\##  Project Structure
 
 
 
@@ -90,132 +90,6 @@ Ai/
 
 
 
-\## \&#x20;Getting Started
-
-
-
-\### 1. Clone the repository
-
-
-
-```bash
-
-git clone https://github.com/YOUR-USERNAME/ai-assistant.git
-
-cd ai-assistant
-
-```
-
-
-
-Replace `YOUR-USERNAME/ai-assistant` with your actual GitHub repository URL.
-
-
-
-\### 2. Create a virtual environment
-
-
-
-```bash
-
-python -m venv venv
-
-```
-
-
-
-\### 3. Activate the virtual environment
-
-
-
-\*\*Windows CMD:\*\*
-
-
-
-```bat
-
-venv\\Scripts\\activate
-
-```
-
-
-
-\### 4. Install dependencies
-
-
-
-```bash
-
-python -m pip install -r requirements.txt
-
-```
-
-
-
-\### 5. Configure environment variables
-
-
-
-Create a `.env` file in the project root and add the environment variables required by your application.
-
-
-
-Do not commit your `.env` file or publish API keys and other secrets.
-
-
-
-\### 6. Run database migrations
-
-
-
-```bash
-
-python manage.py migrate
-
-```
-
-
-
-\### 7. Start the development server
-
-
-
-```bash
-
-python manage.py runserver
-
-```
-
-
-
-Open your browser at:
-
-
-
-\[http://127.0.0.1:8000/](http://127.0.0.1:8000/)
-
-
-
-\## \&#x20;Configuration
-
-
-
-Application settings are managed in `config/settings.py`. Environment variables can be loaded using `python-dotenv`.
-
-
-
-\## \&#x20;Security
-
-
-
-\- Keep API keys and credentials private.
-
-\- Never commit `.env` files.
-
-\- Do not use Django's development server for production deployment.
-
-\- Set `DEBUG = False` and configure `ALLOWED\_HOSTS` before deploying.
-
 
 
 \## Roadmap
@@ -238,11 +112,11 @@ Application settings are managed in `config/settings.py`. Environment variables 
 
 
 
-\*\*Your Name\*\*
+\*\*TAZZ022003\*\*
 
 
 
-GitHub: \[https://github.com/YOUR-USERNAME](https://github.com/YOUR-USERNAME)
+GitHub: \[https://github.com/Tazz022003/
 
 
 
